@@ -202,7 +202,7 @@ knitr::include_graphics("img/p2-5-2.png")
 
 ---
 
-# Multi-variate integration
+# Multi-Omics integration
 
 .panelset[
 
