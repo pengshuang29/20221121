@@ -1,0 +1,106 @@
+---
+title: "R and Rstudio"
+subtitle: "Make scientifc data analysis easy to conduct"
+author: "Shuang PENG"
+institute: "AgroParisTech"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    css:
+    - default
+    - css/cols.css
+    - css/eee.css
+    - css/eee-fonts.css
+    - css/font-awesome.min.css
+    seal: F
+    # yolo: 
+    nature:
+      beforeInit: libs/cols_macro.js
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+      ratio: 16:9
+      # titleSlideClass: [bottom, right]
+---
+
+class: center, middle, inverse
+
+```{r setup, echo=FALSE}
+source("dep.R")
+
+library(metathis)
+library(xaringanExtra)
+
+source("par.R")$value
+source("hea.R")$value
+```
+
+---
+
+# What is R
+
+## for .red[nonprogrammer]: R is a .red[programming language]
+
+## for .red[programmer]: R is just a .red[statistical software] (like SPSS, SAS)
+
+## for someone like .red[me]: R can do .red[a lot of things]
+
+???
+
+nonprogrammer: https://en.wiktionary.org/wiki/nonprogrammer#English
+
+programming language: https://en.wikipedia.org/wiki/Programming_language
+
+---
+
+class: center, middle
+
+# A general research workflow
+
+```{r, out.width = "80%", fig.align='center', fig.cap=''}
+knitr::include_graphics("img/p1-3.svg")
+```
+
+---
+
+class: center, middle
+
+# Other utilities
+
+```{r, out.width = "80%", fig.align='center', fig.cap=''}
+knitr::include_graphics("img/p1-4.svg")
+```
+
+---
+
+```{r embed-xaringan, echo=FALSE}
+knitr::include_url('https://ps29.shinyapps.io/shinyg2/', height = "650px")
+```
+
+---
+
+background-image: url(img/p1-5.svg)
+background-size: contain
+
+<br><br><br><br><br><br><br><br>
+
+### .red[R for Data ]
+### .red[Analysis]
+
+---
+
+background-image: url(img/p1-6.png)
+background-size: contain
+
+???
+
+# errors usually exist in: 
+
+---
+
+class: inverse, center, middle
+
+## [NEXT PART <br><br> Multi-Omics Data Analysis Workflow](r-for-multiomics-analysis.html)
